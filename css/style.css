@@ -1,0 +1,172 @@
+:root {
+	--mainColor: yellow;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: linear-gradient(to right, red, blue);
+}
+
+nav {
+	display: flex;
+	width: 90%;
+	margin: 50px 0px 30px;
+	justify-content: space-between;
+}
+
+nav > button {
+	background-color: var(--mainColor);
+	border: 0;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 5px 80px;
+	cursor: pointer;
+}
+
+main {
+	display: flex;
+	width: 90%;
+}
+
+article {
+	width: 65vw;
+	height: 60vh;
+	position: relative;
+}
+
+article > img {
+	width: inherit;
+	height: inherit;
+	object-fit: cover;
+}
+
+article > h1,
+article > h2 {
+	display: inline-block;
+	background-color: var(--mainColor);
+	padding: 3px;
+	position: absolute;
+	left: 7%;
+	top: 40%;
+}
+
+article > h2 {
+	font-size: 16px;
+	top: 60%;
+}
+
+aside {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-left: 15px;
+	width: 100%;
+}
+
+aside > div {
+	background-color: var(--mainColor);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 50px;
+}
+
+aside > div > p {
+	font-weight: bold;
+}
+
+aside > div > .price {
+	font-size: 50px;
+	font-family: 'Arimo', sans-serif;
+}
+
+.cardsRow {
+	margin: 20px 0px;
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.cardsRow > .card {
+	background-color: white;
+	width: 20%;
+	text-align: center;
+	padding: 20px;
+}
+
+.cardsRow > .card > h3 {
+	margin: 10px;
+}
+
+.cardsRow > .card > img {
+	width: 50px;
+}
+
+.featuredTaco {
+	width: 90%;
+	height: 300px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+}
+
+.featuredTaco > img {
+	width: 30%;
+	margin-right: 50px;
+}
+
+.featuredTaco > .text > h2,
+.featuredTaco > .text > p {
+	margin-bottom: 15px;
+}
+
+.featuredTaco > .text > button {
+	background-color: var(--mainColor);
+	border: 1px solid black;
+	padding: 6px 12px;
+	cursor: pointer;
+}
+
+footer {
+	width: 90%;
+	margin-bottom: 50px;
+}
+
+footer > .divider {
+	margin: 20px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+footer > .divider > .left {
+	height: 5px;
+	background: linear-gradient(to right, red, yellow);
+	width: 43%;
+}
+
+footer > .divider > .right {
+	height: 5px;
+	background: linear-gradient(to right, yellow, blue);
+	width: 43%;
+}
+
+footer > .images {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+footer > .images > img {
+	margin: 6px;
+}
